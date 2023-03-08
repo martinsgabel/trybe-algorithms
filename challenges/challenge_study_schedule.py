@@ -11,8 +11,5 @@ def study_schedule(permanence_period, target_time):
 
     return counter
 
-    raise NotImplementedError
 
-
-# retorno contador
 # -vv (mais detalhes do erro)
