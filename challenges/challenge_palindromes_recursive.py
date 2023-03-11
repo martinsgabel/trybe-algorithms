@@ -6,13 +6,9 @@ def reversing_word(word):
 
 
 def is_palindrome_recursive(word, low_index=0, high_index=0):
-    if (
-        not word
-        or len(word) == 0
-        or type(word) != str
-    ):
+    if not word or len(word) == 0 or type(word) != str:
         return False
-    
+
     if len(word) == 1:
         return True
 
