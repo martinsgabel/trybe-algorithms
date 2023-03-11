@@ -1,13 +1,13 @@
 def study_schedule(permanence_period, target_time):
-    if target_time == " " or target_time.isnumeric() is False:
+    if not target_time or type(target_time) != int:
         return None
 
     counter = 0
     num = int(target_time)
     for period in permanence_period:
-        if period[0] == num or period[1] == num:
-            counter += 1
-        elif period[0] < num and period[1] > num:
+        if type(period[0]) != int or type(period[1]) != int:
+            return None
+        if period[0] <= num and period[1] >= num:
             counter += 1
 
     return counter

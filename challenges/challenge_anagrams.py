@@ -1,3 +1,5 @@
 def is_anagram(first_string, second_string):
-    """Faça o código aqui."""
-    raise NotImplementedError
+    # deixar tudo uppercase
+    # quebrar a frase em letras e ordená-las
+    # pegar cada letra da primeira frase e comparar se existe na segunda
+    pass
