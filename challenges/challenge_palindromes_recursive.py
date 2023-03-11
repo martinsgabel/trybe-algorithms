@@ -12,11 +12,11 @@ def is_palindrome_recursive(word, low_index=0, high_index=0):
         or type(word) != str
     ):
         return False
-
-    initial_word = word
-
+    
     if len(word) == 1:
         return True
+
+    initial_word = word
 
     final_word = "".join(reversing_word(list(word)))
 
