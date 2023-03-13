@@ -1,11 +1,10 @@
 def find_duplicate(nums):
-    if not nums or type(nums) != str or len(nums) < 2:
-        return False
-
     nums.sort()
-    for n in range(len(nums) - 1):
-        if nums[0] < 0:
+    for n in nums:
+        if type(n) == str or len(nums) < 2 or nums[0] < 0:
             return False
+
+    for n in range(len(nums) - 1):
         if nums[n] == nums[n + 1]:
             return nums[n]
 
